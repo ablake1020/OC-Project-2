@@ -9,13 +9,34 @@
 <body>
     <nav>
         <ul class="main-nav">
-            <li class="nav-item"><a href="#">Accomodations</a></li>
-            <li class="nav-item"><a href="#">Activities</a></li>
-            <li class="nav-item"><a href="#">Sign up</a></li>
+            <li class="nav-item"><a class="menu-link" href="#">Accomodations</a></li>
+            <li class="nav-item"><a class="menu-link" href="#">Activities</a></li>
+            <li class="nav-item"><a class="menu-link" href="#">Sign up</a></li>
         </ul>
     </nav>
     <!-- Reservia logo-->
-    <h3>Find a place for your dream vacation</h3>
+
+    <h2>Find a place for your dream vacation</h2>
+
     <p id="break">Downtown or in nature<br></p>
+        
+    <div>
+        <div id="searchbar">
+            <input type="text" placeholder="Enter your destination...">
+    </div>
+
+    <div>
+        <div id="filters-container">
+            <h4 id="filters-heading">Filters</h4>
+    </div>
+<!--Before the large containing div, remember to insert the info icon and it's little <p> message-->
+    <p>More than 500 accomodations are available in this city</p>
+
+    <main>
+        <div class="large-container">
+            <h3 id="main-header">Accomodations in Marseille</h3>
+            <section class="lodging"></section>
+    </main>
+
 </body>
 </html>

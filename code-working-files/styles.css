@@ -1,3 +1,7 @@
+body {
+    margin: 12px;
+}
+
 .main-nav {
     text-align: right;
     padding: 15px;
@@ -13,11 +17,48 @@
 a {
     text-decoration: none;
     color: #0065FC;
+    font-size: 18px;
 }
 
 a:hover {
     background-color: #0065FC;
     color: white;
-    padding: 8px;
+    padding: 10px;
     border-radius: 15px;
+}
+
+#searchbar {
+    display: inline-block;
+    border: solid;
+    border-radius: 6px;
+    border-style: 2px;
+}
+
+#filters-container {
+    display: flex;
+    margin-top: 10px;
+    border-color: black;
+    border: dashed;
+    border-radius: 10px;
+    width: 70%;
+}
+
+#filters-heading {
+    padding: 5px;
+}
+
+.large-container {
+    display: flex;
+    margin-top: 2%;
+    background-color: #f2f2f2;
+    border-color: black;
+    border-style: solid;
+    width: 800px;
+    height: 500px;
+    border-radius: 15px;
+}
+
+#main-header {
+    padding-left: 20px;
+    padding-top: 25px;
 }
