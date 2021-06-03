@@ -9,12 +9,14 @@
 <body>
     <nav>
         <ul class="main-nav">
-            <li class="nav-item"><a class="menu-link" href="#">Accomodations</a></li>
-            <li class="nav-item"><a class="menu-link" href="#">Activities</a></li>
-            <li class="nav-item"><a class="menu-link" href="#">Sign up</a></li>
+            <li class="nav-item"><a class="menu-link" href="#1">Accomodations</a></li>
+            <li class="nav-item"><a class="menu-link" href="#2">Activities</a></li>
+            <li class="nav-item"><a class="menu-link" href="#3">Sign up</a></li>
         </ul>
     </nav>
-    <!-- Reservia logo-->
+    <figure>
+        <img id="main-logo" src="images/logo/Reservia-logo.png" alt="Reservia logo" title="Reservia" />
+    </figure>
 
     <h2>Find a place for your dream vacation</h2>
 
@@ -23,20 +25,58 @@
     <div>
         <div id="searchbar">
             <input type="text" placeholder="Enter your destination...">
+        </div>
     </div>
 
     <div>
         <div id="filters-container">
             <h4 id="filters-heading">Filters</h4>
+        </div>
     </div>
 <!--Before the large containing div, remember to insert the info icon and it's little <p> message-->
     <p>More than 500 accomodations are available in this city</p>
 
     <main>
+        <div class="content-wrapper"></div>
         <div class="large-container">
             <h3 id="main-header">Accomodations in Marseille</h3>
-            <section class="lodging"></section>
+            <section class="lodging">
+                <section>
+                    <img id="lodging-1" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" />
+                    <h4 class="accom-header">Auberge la Cannabiere<br></h4>
+                    <p class="accom-desc">Night starting at <strong>$25</strong></p>
+                </section>
+            </section>
+                <section class="lodging">
+                    <section>
+                        <img id="lodging-2" src="images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" />
+                        <h4 class="accom-header">Hotel de la mer</h4>
+                        <p class="accom-desc">Night starting at <strong>$46</strong></p>
+                    </section>
+                </section>
+            <h3 id="main-subhead">Show more</h3>
+        </div>
+        <aside>
+            <div class="aside-container">
+                <h3 id="aside-header">Most Popular</h3>
+                <section id="popular-list-1">
+                        <p><img id="popular-1" src="images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" ALIGN="left"></p>
+                        <h4 class="popular-header">Morning Sun Hotel</h4>
+                        <p class="popular-desc">Night starting at <strong>$128</strong></p>
+                </section>
+                <section id="popular-list-2">
+                        <p><img id="popular-2" src="images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg" ALIGN="left"></p>
+                        <h4 class="popular-header">Au coeur de l'eau Bed and Breakfast</h4>
+                        <p class="popular-desc">Night starting at <strong>$71</strong></p>
+                </section>
+            </div>
+        </aside>
     </main>
+    <article>
+        <div class="activities-container"></div>
+    </article>
 
+    
+<footer></footer>
 </body>
 </html>

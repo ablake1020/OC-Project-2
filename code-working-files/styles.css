@@ -8,6 +8,13 @@ body {
     margin: 5px;
 }
 
+#main-logo {
+    width: 100px;
+    position: absolute; 
+	top: 20px; 
+	left: 12px;
+}
+
 .nav-item {
     display: inline-block;
     margin: 0px 20px;
@@ -31,6 +38,7 @@ a:hover {
     display: inline-block;
     border: solid;
     border-radius: 6px;
+    border-width: 1px;
     border-style: 2px;
 }
 
@@ -38,6 +46,7 @@ a:hover {
     display: flex;
     margin-top: 10px;
     border-color: black;
+    border-width: 1px;
     border: dashed;
     border-radius: 10px;
     width: 70%;
@@ -47,14 +56,28 @@ a:hover {
     padding: 5px;
 }
 
-.large-container {
+.content-wrapper {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.large-container {
     margin-top: 2%;
     background-color: #f2f2f2;
     border-color: black;
+    border-width: 1px;
     border-style: solid;
     width: 800px;
-    height: 500px;
+    height: 570px;
+    border-radius: 15px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lightgreen;
+    border-style: solid;
+    border-width: 1px;
     border-radius: 15px;
 }
 
@@ -62,3 +85,117 @@ a:hover {
     padding-left: 20px;
     padding-top: 25px;
 }
+
+#main-subhead {
+    padding-left: 20px;
+    padding-top: 2px;
+}
+
+.lodging {
+    background-color: white;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 30%;
+    height: 200px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 15px;
+}
+
+#lodging-1 {
+    width: 156px;
+    border-radius: 15px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#lodging-2 {
+    width: 100px;
+    border-radius: 15px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.accom-header {
+    margin-left: 7%;
+}
+
+.accom-desc {
+    margin-left: 7%;
+}
+
+.aside-container {
+    margin-top: 6.1%;
+    margin-left: 6%;
+    width: 400px;
+    height: 570px;
+    background-color: #f2f2f2;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15px;
+    justify-content: space-between;
+}
+
+#aside-header {
+    padding-left: 20px;
+    padding-top: 25px;
+}
+
+#popular-list-1 {
+    background-color: white;
+    width: 80%;
+    height: 150px;
+    margin-left: 40px;
+    border-radius: 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#popular-list-2 {
+    background-color: white;
+    width: 80%;
+    height: 150px;
+    margin-left: 40px;
+    border-radius: 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#popular-1 {
+    width: 150px;
+    height: 100px;
+    border-radius: 15px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#popular-2 {
+    width: 150px;
+    height: 100px;
+    border-radius: 15px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.popular-header {
+    margin-left: 5px;
+    margin-top: 10%;
+    padding-left: 45px;
+}
+
+.popular-desc {
+    margin-left: 7%;
+}
+
+.activities-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lightblue;
+    width: 1200px;
+    height: 300px;
+    margin-top: 2%;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15px;
+}
+
+
