@@ -58,15 +58,14 @@ a:hover {
 
 .content-wrapper {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
 }
 
 .large-container {
+    display: flex;
+    flex-flow: row wrap;    
     margin-top: 2%;
     background-color: #f2f2f2;
-    border-color: black;
-    border-width: 1px;
-    border-style: solid;
     width: 800px;
     height: 570px;
     border-radius: 15px;
@@ -75,8 +74,8 @@ a:hover {
 main {
     display: flex;
     flex-wrap: wrap;
-    background-color: lightgreen;
-    border-style: solid;
+    flex-direction: row;
+    width: 100%;
     border-width: 1px;
     border-radius: 15px;
 }
@@ -95,13 +94,14 @@ main {
     background-color: white;
     margin-left: 20px;
     margin-bottom: 20px;
+    margin-top: 25px;
     width: 30%;
     height: 200px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 15px;
 }
 
-#lodging-1 {
+#lodging-1, #lodging-2, #lodging-3, #lodging-4 {
     width: 156px;
     border-radius: 15px;
     margin-top: 5px;
@@ -109,6 +109,34 @@ main {
 }
 
 #lodging-2 {
+    width: 100px;
+    border-radius: 15px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#lodging-3 {
+    width: 100px;
+    border-radius: 15px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#lodging-4 {
+    width: 100px;
+    border-radius: 15px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#lodging-5 {
+    width: 100px;
+    border-radius: 15px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#lodging-6 {
     width: 100px;
     border-radius: 15px;
     margin-top: 5px;
@@ -129,8 +157,6 @@ main {
     width: 400px;
     height: 570px;
     background-color: #f2f2f2;
-    border-color: black;
-    border-style: solid;
     border-width: 1px;
     border-radius: 15px;
     justify-content: space-between;
@@ -188,14 +214,121 @@ main {
 .activities-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     background-color: lightblue;
-    width: 1200px;
-    height: 300px;
+    width: 100%;
+    height: 500px;
     margin-top: 2%;
-    border-color: black;
-    border-style: solid;
     border-width: 1px;
     border-radius: 15px;
 }
 
+.activities-header {
+    margin-left: 5px;
+    margin-top: 2.5%;
+    padding-left: 10px;
+}
 
+.activities {
+    background-color: white;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    width: 30%;
+    height: 200px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 15px;
+}
+
+#activities-list-1 {
+    background-color: white;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    width: 22%;
+    height: 90%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 15px;  
+}
+
+#activities-list-2 {
+    background-color: white;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    width: 22%;
+    height: 55%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 15px;
+}
+
+#activities-list-3 {
+    background-color: white;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    width: 22%;
+    height: 90%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 15px;
+}
+
+#activities-list-4 {
+    background-color: white;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    width: 22%;
+    height: 40%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 15px;
+}
+
+#activities-list-5 {
+    background-color: white;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    width: 22%;
+    height: 30%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 15px;
+}
+
+#activities-list-6 {
+    background-color: white;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    width: 22%;
+    height: 40%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 15px;
+}
+
+#activity-1 {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    margin-top: -20px;
+}
+
+#activity-2 {
+    width: 100%;
+    height: 40%;
+    border-radius: 15px;
+    margin-top: -20px;
+  }
+
+footer {
+    background-color: #f2f2f2;
+    text-align: left;
+    margin-top: 2%;
+}
+
+#footer-left, #footer-center, #footer-right {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    text-align: left;
+    margin: 15px;
+}
