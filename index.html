@@ -12,9 +12,9 @@
 <body>
     <nav>
         <ul class="main-nav">
-            <li class="nav-item"><a class="menu-link" a href="https://www.wien.info/en">Accomodations</a></li>
-            <li class="nav-item"><a class="menu-link" a href="https://www.wien.info/en">Activities</a></li>
-            <li class="nav-item"><a class="menu-link" href="#https://www.wien.info/en">Sign up</a></li>
+            <li class="nav-item"><a class="menu-link" href="https://www.wien.info/en">Accomodations</a></li>
+            <li class="nav-item"><a class="menu-link" href="https://www.wien.info/en">Activities</a></li>
+            <li class="nav-item"><a class="menu-link" href="#https://www.wien.info/en"><strong id="sign-up">Sign up</strong></a></li>
         </ul>
     </nav>
     <figure>
@@ -32,37 +32,34 @@
         </form>
     </section>
 
-    <section id="filters-container">
-        <div id="filters-header"><h4>Filters</h4></div>
-            <div class="filters-list">
-                <div id="filters-1">
-                    <i class="fas fa-money-bill-wave fa-customize-filters"></i><h4 class="filters-content">Low cost</h4>
-                </div>
-            </div>
-            <div class="filters-list">
-                <div id="filters-2">
-                    <i class="fas fa-child fa-customize-filters"></i><h4 class="filters-content">Family-friendly</h4>
-                </div>
-            </div>
-            <div class="filters-list">
-                <div id="filters-3">
-                    <i class="fas fa-heart fa-customize-filters"></i><h4 class="filters-content">Romantic</h4>
-                </div>
-            </div>
-            <div class="filters-list">
-                <div id="filters-4">
-                    <i class="fas fa-dog fa-customize-filters"></i><h4 class="filters-content">Pets allowed</h4>
-                </div>
-            </div>
-    </section>
+    <div class="filters-container">
+        <h4 class="filters-header">Filters</h4>
+        <span class="filters-wrapper">
+          <i class="fas fa-money-bill-wave filters-icon"></i>
+          <div class="filters-text">Low cost</div>
+        </span>
+        <span class="filters-wrapper">
+            <i class="fas fa-child filters-icon"></i>
+            <div class="filters-text">Family-friendly</div>
+        </span>
+        <span class="filters-wrapper">
+          <i class="fas fa-heart filters-icon"></i>
+          <div class="filters-text">Romantic</div>
+        </span>
+        <span class="filters-wrapper">
+          <i class="fas fa-dog filters-icon"></i>
+          <div class="filters-text">Pets allowed</div>
+        </span>
+    </div>
 
-<!--Before the large containing div, remember to insert the info icon and it's little <p> message-->
+<!--accomodations information for the city-->
 
-    <section>
-        <div id="fa-info">
-            <p id="prehead-info"><span id="icon-background"></span><i class="fas fa-info fa-customize-info"></i>More than 500 accomodations are available in this<br><span id="city">city</span></p>
-        </div>
-    </section>
+    <div id="accomodations-info">
+        <div><i class="fas fa-info fa-circle" id="fa-info"></i></div>
+        <p>More than 500 accommodations are available in this<br>city</p>
+    </div>
+
+<!--listings of all accomodations depicted in the large container-->
 
     <main>
         <div class="content-wrapper"></div>
@@ -155,6 +152,8 @@
             <h3 id="main-subhead">Show more</h3>
         </section>
 
+<!--the most popular listings appear on the right side of the screen in desktop and first in mobile-->
+
         <aside>
             <div class="aside-container">
                 <i class="fas fa-chart-line fa-customize-popular"></i>
@@ -198,58 +197,44 @@
             </div>
         </aside>
 
-<!-- Copy all of this section's content into a new note and save in OC folder-->
-<!--Bapu gave me this code but I want to learn it-->
 <!--1. create a container for these elements; 2. make a header; 3. create a class within both 1 and 2 of the listings-->
 <!--4. Make another class within the 3 sections for the tall cards; 5. Inside, add class for img + src, and contents -->
 
         <section class="activities-container">
             <h3 id="activities-header">Activities in Marseille</h3>
             <div class="activities-listing">
-                <article class="card3tall">
+                <article class="activities-tall-card">
                     <a href="#"></a>
-                    <img class="card3tallimage" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Old Port" />
-                    <div class="card3tallcontent">
-                        <h4>Old Port</h4>
-                    </div>
+                    <img class="activities-tall-image" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Old Port" />
+                    <div class="activities-tall-content"><h4>Old Port</h4></div>
                 </article>
-                <section class="bottomshort">
-                    <article class="card3short">
+                <section class="activities-short-container">
+                    <article class="activities-short-card-1">
                         <a href="#"></a>
-                        <img class="card3shortimage" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Pomegues Fort" />
-                        <div class="card3shortcontent">
-                            <h4>Pomègues Fort</h4>
-                        </div>
+                        <img class="activities-short-image-1" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Pomegues Fort" />
+                        <div class="activities-short-content"><h4>Pomègues Fort</h4></div>
                     </article>
-                    <article class="card3short">
+                    <article class="activities-short-card-2">
                         <a href="#"></a>
-                        <img class="card3shortimage" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Frioul Island" />
-                        <div class="card3shortcontent">
-                            <h4>Frioul Island</h4>
-                        </div>
+                        <img class="activities-short-image-2" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Frioul Island" />
+                        <div class="activities-short-content"><h4>Frioul Island</h4></div>
                     </article>
                 </section>
-                    <article class="card3tall">
+                    <article class="activities-tall-card">
                         <a href="#"></a>
-                        <img class="card3tallimage" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanques National Park" />
-                        <div class="card3tallcontent">
-                            <h4>Calanques National Park</h4>
-                        </div>
+                        <img class="activities-tall-image" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanques National Park" />
+                        <div class="activities-tall-content"><h4>Calanques National Park</h4></div>
                     </article>
-                <section class="bottomshort">
-                    <article class="card3short">
+                <section class="activities-short-container">
+                    <article class="activities-short-card-1">
                         <a href="#"></a>
-                        <img class="card3shortimage" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre Dame-de-la-Garde" />
-                        <div class="card3shortcontent">
-                            <h4>Notre-Dame-de-la-Garde</h4>
-                        </div>
+                        <img class="activities-short-image-1" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre Dame-de-la-Garde" />
+                        <div class="activities-short-content"><h4>Notre-Dame-de-la-Garde</h4></div>
                     </article>
-                    <article class="card3short">
+                    <article class="activities-short-card-2">
                         <a href="#"></a>
-                        <img class="card3shortimage" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Longchamp Park" />
-                        <div class="card3shortcontent">
-                            <h4>Longchamp Park</h4>
-                        </div>
+                        <img class="activities-short-image-2" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Longchamp Park" />
+                        <div class="activities-short-content"><h4>Longchamp Park</h4></div>
                     </article>
                 </section>
             </div>
@@ -280,6 +265,6 @@
     <figure>
         <img class="logo-bottom" src="images/logo/Reservia.svg" alt="bottom-logo">
     </figure>
-    
+
 </body>
 </html>

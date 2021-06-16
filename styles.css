@@ -38,9 +38,13 @@ h4 {
 .menu-link {
     text-decoration: none;
     color: #0065FC;
-    font-size: 18px;
+    font-size: 16px;
     padding: 1px;
     border-radius: 15px;
+}
+
+#sign-up {
+    margin-left: -2px
 }
 
 #top-subheading {
@@ -50,9 +54,10 @@ h4 {
 }
 
 .menu-link:hover {
-    color: #0065FC;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 5px;
-    padding: 10px;
+    border-top-style: solid;
+    border-radius: 0px;
+    padding-top: 22px;
+
 }
 
 #search-bar {
@@ -98,78 +103,73 @@ button {
     font-size: 14px;
     cursor: pointer;
 }
-
-#filters-container {
-    display: inline-block;
-    width: 635px;
+  
+.filters-header{
+    margin-right : 16px;
 }
-
-#filters-header {
-    display: inline-block;
-    padding: 10px 0px;
-    margin-right: 16px;
+  
+.filters-container{
+    display: flex;
+    align-items: center;
 }
-
-.fa-customize-filters {
-    color: #0065FC;
-    float: left;
+  
+.filters-wrapper{
+    display: flex;
+    align-items: center;
+    border: 1.5px solid #f2f2f2;
+    width: fit-content;
     border-radius: 2rem;
-    width: 20px;
-    height: 20px;
+    margin-left: 12px;
+    font-size: 14px;
 }
-
-.filters-list {
-    display: inline-block;
-    padding: 4px;
-    margin: 6px;
-    height: 20px;
-    background-color: #ffffff;
+  
+.filters-icon{
+    color: #0065fc;
+    background-color: #DEEBFF;
+    border-radius: 2rem;
+    width: 15px;
+    height: 15px;
+    justify-content: center;
     text-align: center;
-    vertical-align: middle;
-    border: solid lightgray 1.5px;
-    border-radius: 2rem;
+    padding: 10px 10px;
+    margin: 0px 10px 0px -2px;
+}
+.filters-text{
+    flex: 1;
+    margin-right: 12px;
+    font-weight: 600;
 }
 
-#filters-1, #filters-3 {
-    width: 95px;
-    margin-top: 3px;
-    font-size: 14px;
-}
-
-#filters-2, #filters-4 {
-    width: 120px;
-    margin-top: 3px;
-    font-size: 14px;
-}
-
-.filters-content {
-    margin-top: 3px;
-}
-
-.filters-list:hover {
-    background-color: white;
+.filters-wrapper:hover {
     color: #0065FC;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 5px;
     cursor: pointer;
 }
 
-.fa-customize-info {
-    color: #0065FC;
-    width: 20px;
-    height: 20px;
-    font-size: 12px;
-    border: 1px solid lightgray;
-    border-radius: 1rem;
-    vertical-align: middle;
-    text-align: center;
-    margin-right: 10px;
-    position: relative;
-    top: -2px;
+#accomodations-info {							
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: baseline;
 }
 
-#city {
-    margin-left: 34px;
+#fa-info {
+	font-size: 12px;
+	border-radius: 1rem;
+	color: #0065FC;
+	border: 1.5px solid #F2F2f2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 5px;
+	width: 5px;
+	padding: 7px;
 }
+#accomodations-info p {
+	font-size: 16px;
+	padding-left: 12px;
+}
+
 .content-wrapper {
     display: flex;
     flex-flow: row wrap;
@@ -221,7 +221,7 @@ main {
 }
 
 .lodging:hover {
-    box-shadow: #0065FC 0px 0px 5px;
+    box-shadow: black 0px 0px 0px 0px;
 }
 
 #lodging-1, #lodging-2, #lodging-3, #lodging-4, #lodging-5, #lodging-6 {
@@ -372,7 +372,7 @@ strong {
 }
 
 #popular-list-1:hover, #popular-list-2:hover, #popular-list-3:hover {
-    box-shadow: #0065FC 0px 0px 5px;
+    box-shadow: black 0px 0px 0px 0px;
 }
 
 #popular-1, #popular-2, #popular-3 {
@@ -407,7 +407,7 @@ strong {
     cursor: pointer;
 }
 
-.card3tall {
+.activities-tall-card {
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -420,70 +420,80 @@ strong {
     overflow: hidden;
 }
 
-.card3tallimage {
-    height: 85%;
+.activities-tall-image {
+    height: 87.1%;
     border-radius: 1rem 1rem 0 0;
     object-fit: cover;
 }
 
-.card3tallcontent {
+.activities-tall-content {
     padding: 0 1.5rem;
     font-size: 1rem;
     align-content: center;
-    background-color: white;
 }
 
-.card3tallcontent h4 {
+.activities-tall-content h4 {
     margin: 1rem;
     margin-left: -5px;
     text-align: left;
-    }
+}
 
-.bottomshort {
+.activities-short-container {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
     width: 23%;
 }
 
-.card3short {
+.activities-short-card-1 {
     display: flex;
     flex-direction: column;
     background-color: white;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    height: 170px;
+    height: 200px;
     border-radius: 1rem;
     margin: 5px;
     position: relative;
     overflow: hidden;
 }
 
-.card3short a::after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+.activities-short-card-2 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    height: 150px;
+    border-radius: 1rem;
+    margin: 5px;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
 }
 
-.card3shortimage {
-    height: 70%;
+.activities-short-image-1 {
+    height: 80%;
     object-fit: cover;
     border-radius: 1rem 1rem 0 0;
 }
 
-.card3shortcontent {
-    padding: .5rem .5rem;
+.activities-short-image-2 {
+    height: 70%;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+.activities-short-content {
+    padding: .5rem;
     font-size: 1em;
     align-content: center;
 }
 
-.card3shortcontent h4 {
-    margin: 10px;
+.activities-short-content h4 {
+    margin: 5px;
     margin-left: 13px;
     text-align: left;
+}
+
+.activities-tall-card:hover, .activities-short-card-1:hover, .activities-short-card-2:hover {
+    box-shadow: lightgray 0px 0px 10px;
 }
 
 footer {
@@ -507,4 +517,8 @@ footer {
 .logo-bottom {
     width: 15%;
     margin-left: 42%;
+}
+
+@media only screen and (max-width: 375px) {
+
 }
