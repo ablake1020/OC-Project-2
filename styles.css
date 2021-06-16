@@ -170,11 +170,6 @@ button {
 	padding-left: 12px;
 }
 
-.content-wrapper {
-    display: flex;
-    flex-flow: row wrap;
-}
-
 .large-container {
     display: flex;
     flex-flow: row wrap;    
@@ -273,14 +268,14 @@ main {
 }
 
 .aside-container {
-    margin-top: 6.75%;
-    margin-left: 6%;
-    width: 110%;
+    width: 400px;
     height: 571.5px;
+    margin-left: 25px;
+    margin-top: 23.75px;
     background-color: #f2f2f2;
     border-width: 1px;
     border-radius: 15px;
-    justify-content: space-between;
+    position: absolute;
 }
 
 #aside-header {
@@ -292,7 +287,7 @@ main {
     float: right;
     font-size: 25px;
     margin-right: 9%;
-    margin-top: 6%;
+    margin-top: 10%;
 }
 
 .popular-header {
@@ -329,6 +324,7 @@ strong {
 
 #ratings-popular-two {
     margin-left: 15px;
+    margin-top: 20px;
 }
 
 #ratings-popular-three {
@@ -420,7 +416,7 @@ strong {
 }
 
 .activities-tall-image {
-    height: 87.1%;
+    height: 88.75%;
     border-radius: 1rem 1rem 0 0;
     object-fit: cover;
 }
@@ -432,8 +428,8 @@ strong {
 }
 
 .activities-tall-content h4 {
-    margin: 1rem;
     margin-left: -5px;
+    margin-top: 13.502px;
     text-align: left;
 }
 
@@ -441,6 +437,9 @@ strong {
     display: flex;
     flex-flow: column wrap;
     width: 23%;
+    border-radius: 1rem;
+    height: max-content;
+    margin-bottom: -4px;
 }
 
 .activities-short-card-1 {
@@ -469,13 +468,13 @@ strong {
 }
 
 .activities-short-image-1 {
-    height: 80%;
+    height: 160px;
     object-fit: cover;
     border-radius: 1rem 1rem 0 0;
 }
 
 .activities-short-image-2 {
-    height: 70%;
+    height: 108px;
     object-fit: cover;
     border-radius: 1rem 1rem 0 0;
 }
@@ -513,11 +512,136 @@ footer {
     cursor: pointer;
 }
 
+.airplane {
+    text-align: center;
+    vertical-align: middle;
+    background-color: #e6e6e6;
+}
+
+.fa-plane {
+    display: flex;
+    color: #0065FC;
+    font-size: 36px;
+    margin: 20px;
+    justify-content: space-evenly;
+}
+
 .logo-bottom {
+    display: none;
     width: 15%;
     margin-left: 42%;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 768px) {
+    body {
+        min-width: 375px;
+        margin: 12px;
+    }
 
+    .filters-container {
+        width: 100%;
+        height: 175px;
+    }
+
+    .filters-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 12px;
+    }
+
+    /* accomodation cards information */
+    
+    .aside-container {
+        display: block;
+        flex-direction: column;
+    }
+
+    .large-container {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 90%;
+        background-color: transparent;
+    }
+
+    article {
+        margin-bottom: 100px;
+    }
+
+    #main-header {
+        margin-bottom: 30px;
+    }
+
+    .lodging {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 100%;
+        margin-right: 20px auto;
+        margin-top: -5px;
+    }
+
+    #lodging-1, #lodging-2, #lodging-3, #lodging-4, #lodging-5, #lodging-6 {
+        width: 97%;
+        object-fit: cover;
+    }
+    
+    .lodging:hover {
+        box-shadow: lightgray 0px 0px 29px;
+    }
+
+    /* activities information */
+
+    .activities-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 850px;
+    }
+
+    .activities-listing {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        margin: 0px auto;
+        height: fit-content;
+    }
+
+    .activities-short-card-1, .activities-short-card-2, .activities-tall-card {
+        margin: 0 auto;
+        width: 400px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .activities-tall-content, .activities-short-content{
+        font-size: 1rem;
+        align-content: center;
+    }
+
+    .activities-short-image-1, .activities-short-image-2, .activities-tall-image {
+        height: 150px;
+        object-fit: cover;
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    footer {
+        width: 400px;
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+
+    #footer-left, #footer-center, #footer-right {
+        display: block;
+        width: 100%;
+        padding: 1px;
+        margin: -2px;
+    }
+
+    .airplane, .fa-plane {
+       display: none;
+    }
+
+    .logo-bottom {
+        display: block;
+        width: 20%;
+        height: 20%;
+    }
 }

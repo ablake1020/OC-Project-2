@@ -5,4 +5,4 @@ Deliverables:
 
 A link to your GitHub or GitLab repository and include: 
    - The code versioned on GitHub or GitLab.
-   - A link to your web page hosted online on GitHub Pages or GitLab Pages in the README.
+   - A link to your web page hosted online on GitHub Pages in the README: https://ablake1020.github.io/OC-Project-2/
