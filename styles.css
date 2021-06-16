@@ -227,7 +227,7 @@ main {
 #lodging-1, #lodging-2, #lodging-3, #lodging-4, #lodging-5, #lodging-6 {
     display: flex;
     flex-wrap: wrap;
-    width: 232px;
+    width: 96%;
     height: 120px;
     border-radius: 1rem 1rem 0 0;
     object-fit: cover;
@@ -273,10 +273,10 @@ main {
 }
 
 .aside-container {
-    margin-top: 6.1%;
+    margin-top: 6.75%;
     margin-left: 6%;
-    width: 410px;
-    height: 570px;
+    width: 110%;
+    height: 571.5px;
     background-color: #f2f2f2;
     border-width: 1px;
     border-radius: 15px;
@@ -324,11 +324,10 @@ strong {
 
 .ratings-aside {
     display: inline-block;
-    margin-left: 18px;
+    margin-left: 15px;
 }
 
 #ratings-popular-two {
-    margin: 22px;
     margin-left: 15px;
 }
 
