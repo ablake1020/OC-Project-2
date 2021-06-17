@@ -28,7 +28,7 @@
         <form id="search-bar">
             <button id="fa-icon-1"><i class="fas fa-map-marker-alt fa-customize-location"></i></button>
             <input type="text" placeholder="Marseille, France">
-            <button>Search</button>
+            <button><i class="fas fa-search"></i><span id="search-text">Search</span></button>
         </form>
     </section>
 
@@ -42,7 +42,7 @@
             <i class="fas fa-child filters-icon"></i>
             <div class="filters-text">Family-friendly</div>
         </span>
-        <span class="filters-wrapper">
+        <span class="filters-wrapper" id="filters-romantic">
           <i class="fas fa-heart filters-icon"></i>
           <div class="filters-text">Romantic</div>
         </span>
@@ -56,7 +56,7 @@
 
     <div id="accomodations-info">
         <div><i class="fas fa-info fa-circle" id="fa-info"></i></div>
-        <p>More than 500 accommodations are available in this<br>city</p>
+        <p>More than 500 accommodations are available in this<br> city</p>
     </div>
 
 <!--listings of all accomodations depicted in the large container-->
@@ -151,10 +151,8 @@
             <h3 id="main-subhead">Show more</h3>
         </section>
 
-<!--the most popular listings appear on the right side of the screen in desktop and first in mobile-->
-
-        <aside>
-            <div class="aside-container">
+        <section>
+            <section class="aside-container">
                 <i class="fas fa-chart-line fa-customize-popular"></i>
                 <h3 id="aside-header">Most Popular</h3>
                 <article id="popular-list-1">
@@ -193,8 +191,8 @@
                         <i class="fas fa-star fa-customize-rating-aside-gray"></i>
                     </div>
                 </article>
-            </div>
-        </aside>
+            </section>
+        </section>
 
 <!--1. create a container for these elements; 2. make a header; 3. create a class within both 1 and 2 of the listings-->
 <!--4. Make another class within the 3 sections for the tall cards; 5. Inside, add class for img + src, and contents -->
@@ -263,7 +261,7 @@
         </footer>
     </section>
     
-    <div class="airplane"><i class="fas fa-plane-arrival fa-plane"></i><span>Reservia, LLC © 2021</span><i class="fas fa-plane-departure fa-plane"></i></div>
+    <div class="airplane"><i class="fas fa-map-marked-alt fa-map"></i><span>Reservia, LLC © 2021</span></div>
 
     <figure>
         <img class="logo-bottom" src="images/logo/Reservia.svg" alt="bottom-logo">
