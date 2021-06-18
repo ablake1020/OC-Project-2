@@ -293,7 +293,6 @@ main {
     display: flex;
     flex-direction: row;
     margin: 0px;
-    margin-left: 10px;
     padding-top: 1rem;
     padding-left: 1rem;
     font-size: 1em;
@@ -533,24 +532,24 @@ footer {
     
     html, body {
         overflow-x: hidden;
-      }
+    }
       body {
         position: relative;
-      }
+    }
 
       #main-logo {
         margin-left: -16px;
         margin-top: -2px;
         width: 175px;
-      }
+    }
 
       header {
         padding-top: 6px;
         font-size: 1rem;
         display: inline-block;
         width: 200px;
-        margin-left: 180px;
-      }
+        margin-left: 215px;
+    }
     
     br {
         display: none;
@@ -579,6 +578,7 @@ footer {
 
     #accomodations-info p {
         font-size: 16px;
+        width: 280px;
         padding-left: 12px;
         padding-bottom: 10px;
     }
@@ -594,9 +594,9 @@ footer {
         flex-direction: column;
         margin-top: 615px;
         align-content: center;
-        background-color: transparent;
         height: 100%;
-        width: 100%;
+        background-color: transparent;
+        width: 414px;
         order: 2;
     }
 
@@ -608,8 +608,10 @@ footer {
     .lodging {
         display: flex;
         flex-direction: column;
+        margin-left: 14px;
         align-content: center;
-        width: 93.75%;
+        width: 375px;
+        padding-bottom: 4px;
         height: 200px;
         margin-top: -5px;
     }
@@ -640,12 +642,17 @@ footer {
     #popular-list-1, #popular-list-2, #popular-list-3 {
         margin: 1px;
         margin-top: 20px;
-        width: 93.75%;
+        width: 90%;
         margin-left: 4px;
     }
 
     .fa-customize-popular {
         margin-right: 20px;
+    }
+
+    #ratings-popular-three {
+        margin-left: 15px;
+        margin-top: 40px;
     }
 
     /* activities information */
@@ -654,9 +661,17 @@ footer {
         display: flex;
         flex-flow: column nowrap;
         align-content: center;
-        margin-top: 25px;
+        margin-top: 10px;
         order: 3;
+        width: 100%;
+        padding-right: 20px;
         border-radius: 15px;
+    }
+
+    .activities-short-container {
+        width: 100%;
+        padding-left: -10px;
+        align-content: inherit;
     }
 
     #activities-header {
@@ -668,18 +683,17 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 90%;
         margin-left: 12px;        
     }
 
     .activities-short-card-1, .activities-short-card-2, .activities-tall-card {
-        margin: 0 auto;
-        width: 325px;
+        width: 375px;
         height: 200px;
         margin-bottom: 20px;
+        margin-left: -10px;
     }
 
-    .activities-tall-content, .activities-short-content{
+    .activities-tall-content, .activities-short-content {
         font-size: 1rem;
         align-content: center;
     }
