@@ -18,22 +18,18 @@
     </ul>
 </header>
 
-    <figure>
-        <img id="main-logo" src="images/logo/Reservia-logo.png" alt="Reservia logo" title="Reservia" />
-    </figure>
+<img id="main-logo" src="images/logo/Reservia-logo.png" alt="Reservia logo" title="Reservia" />
 
-
-    <h2>Find a place for your dream vacation</h2>
+    <h2 id="top-heading">Find a place for your dream vacation</h2>
     <p id="top-subheading">Downtown or in nature</p>
 
 <body>        
-    <section>
-        <form id="search-bar">
-            <button id="fa-icon-1"><i class="fas fa-map-marker-alt fa-customize-location"></i></button>
-            <input type="text" placeholder="Marseille, France">
-            <button><i class="fas fa-search"></i><span id="search-text">Search</span></button>
-        </form>
-    </section>
+    <form id="search-bar">
+        <span id="fa-icon-1"><i class="fas fa-map-marker-alt fa-customize-location"></i></span>
+        <input type="text" placeholder="Marseille, France">
+        <i class="fas fa-search" id="fa-search-icon"></i>
+        <button><span id="search-text">Search</span></button>
+    </form>
 
     <div class="filters-container">
         <h4 class="filters-header">Filters</h4>
@@ -59,7 +55,7 @@
 
     <div id="accomodations-info">
         <div><i class="fas fa-info fa-circle" id="fa-info"></i></div>
-        <p>More than 500 accommodations are available in this<br> city</p>
+        <p>More than 500 accommodations are available in this<br id="br-desktop"> city</p>
     </div>
 
 <!--listings of all accomodations depicted in the large container-->

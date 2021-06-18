@@ -7,7 +7,7 @@ p {
     font-size: 1em;
 }
 
-h2 {
+#top-heading {
     margin: 0px;
     padding: 0px;
 }
@@ -65,15 +65,14 @@ h4 {
 }
 
 #fa-icon-1 {
-    display: inline-block;
     background-color: lightgray;
     border-radius: 1rem 0 0 1rem;
-    padding-top: 12px;
+    padding: 11px 12px 12.5px 12px;
 }
 
 .fa-customize-location {
     color: black;
-    font-size: 14px;
+    font-size: 18px;
     position: relative;
 }
 
@@ -84,6 +83,11 @@ input {
     border: solid #f2f2f2 1px;
     font-family: "Raleway";
     font-size: 14px;
+}
+
+input::placeholder {
+    color: black;
+    font-weight: 900;
 }
 
 input:focus {
@@ -103,6 +107,10 @@ button {
     cursor: pointer;
 }
 
+#fa-search-icon {
+    display: none;
+}
+
 .filters-header{
     margin-right : 16px;
 }
@@ -110,6 +118,7 @@ button {
 .filters-container{
     display: flex;
     align-items: center;
+    margin-top: 12px;
 }
   
 .filters-wrapper{
@@ -186,6 +195,7 @@ main {
     flex-direction: row;
     width: 100%;
 }
+
 #main-header {
     width: 100%;
     margin-left: 20px;
@@ -528,7 +538,7 @@ footer {
 
 /* begin responsive design */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 414px) {
     
     html, body {
         overflow-x: hidden;
@@ -546,22 +556,82 @@ footer {
       header {
         padding-top: 6px;
         font-size: 1rem;
-        display: inline-block;
-        width: 200px;
-        margin-left: 215px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        width: 50%;
+        max-width: 200px;
+        margin-left: 55%;
     }
     
-    br {
+    #br-desktop {
         display: none;
+    }
+
+    #search-bar {
+        display: flex;
+	    box-sizing: border-box;
+        border: solid white 1px;
+	    border-radius: 1rem;
+        margin-left: 10px;
+	    width: 95%;
+        padding-right: -10px;
+	    max-width: 400px;
+        height: 100%
+    }
+
+    input {
+        width: 100%;
+        height: 25px;
+    }
+
+    input::placeholder {
+        font-size: 120%;
+        font-weight: bold;
+        color: black;
     }
 
     #search-text {
         display: none;
     }
 
+    button {
+        display: none;
+    }
+
+    #fa-search-icon {
+        display: flex;
+        color: white;
+        background-color: #0065FC;
+        font-size: 18px;
+        border: solid 1px #f2f2f2;
+        border-radius: 15px;
+        padding: 15px 18px;
+        
+    }
+
+    #fa-icon-1 {
+        background-color: lightgray;
+        border: solid 1px #f2f2f2;
+        border-radius: 1rem 0 0 1rem;
+        padding: 15px 18px;
+        z-index: 2;
+    }
+
+    .fa-customize-location {
+        color: black;
+        font-size: 18px;
+        border-radius: 15px;
+        position: relative;
+    }
+
     .filters-container {
         display: inline-block;
         width: 375px;
+    }
+
+    .filters-header{
+        margin-left : 12px;
     }
     
     .filters-wrapper {
@@ -596,7 +666,7 @@ footer {
         align-content: center;
         height: 100%;
         background-color: transparent;
-        width: 414px;
+        width: max-content;
         order: 2;
     }
 
@@ -610,7 +680,9 @@ footer {
         flex-direction: column;
         margin-left: 14px;
         align-content: center;
-        width: 375px;
+        width: 100%;
+        max-width: 100%;
+        min-width: 93%;;
         padding-bottom: 4px;
         height: 200px;
         margin-top: -5px;
@@ -642,17 +714,23 @@ footer {
     #popular-list-1, #popular-list-2, #popular-list-3 {
         margin: 1px;
         margin-top: 20px;
-        width: 90%;
+        width: 96%;
+        max-width: 95%;
+        min-width: 90%;
         margin-left: 4px;
     }
 
     .fa-customize-popular {
-        margin-right: 20px;
+        margin-right: 22px;
+    }
+
+    .fa-customize-rating-aside, .fa-customize-rating-aside-gray {
+        font-size: 16px;
     }
 
     #ratings-popular-three {
         margin-left: 15px;
-        margin-top: 40px;
+        margin-top: 20px;
     }
 
     /* activities information */
@@ -663,15 +741,11 @@ footer {
         align-content: center;
         margin-top: 10px;
         order: 3;
-        width: 100%;
+        width: 96%;
+        max-width: 95%;
+        min-width: 90%;
         padding-right: 20px;
         border-radius: 15px;
-    }
-
-    .activities-short-container {
-        width: 100%;
-        padding-left: -10px;
-        align-content: inherit;
     }
 
     #activities-header {
@@ -683,11 +757,12 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-left: 12px;        
+        margin-left: 12px;   
     }
 
     .activities-short-card-1, .activities-short-card-2, .activities-tall-card {
-        width: 375px;
+        width: 388px;
+        min-width: 375px;
         height: 200px;
         margin-bottom: 20px;
         margin-left: -10px;
@@ -724,5 +799,28 @@ footer {
         display: block;
         width: 20%;
         height: 20%;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+
+   .activities-container {
+       width: 375px;
+   }
+   
+    .activities-listing {
+        width: 10px;
+    }
+
+    .activities-short-card-1, .activities-short-card-2, .activities-tall-card {
+        width: 360px;
+        min-width: 360px;
+        height: 200px;
+        margin-bottom: 20px;
+        margin-left: -20px;
+    }
+
+    .activities-tall-content, .activities-short-content {
+        align-content: center;
     }
 }
