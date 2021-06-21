@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-- Don't forget to add the "<html>" tags to this-->
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,20 +10,30 @@
     <link rel="icon" href="https://th.bing.com/th/id/R60d00ff5a42906b57ca47cb6a4ff37a8?rik=Ye7Q24vdqeRRNA&pid=ImgRaw" type="image/icon">
 </head>
 
-<header>
-    <ul class="main-nav">
-        <li class="nav-item"><a class="menu-link" href="https://www.wien.info/en">Accomodations</a></li>
-        <li class="nav-item"><a class="menu-link" href="https://www.wien.info/en">Activities</a></li>
-        <li class="nav-item"><a class="menu-link" href="#https://www.wien.info/en"><strong id="sign-up">Sign up</strong></a></li>
-    </ul>
-</header>
+<body>
 
-<img id="main-logo" src="images/logo/Reservia-logo.png" alt="Reservia logo" title="Reservia" />
+    <header>
+        <ul class="main-nav">
+            <li class="nav-item"><a class="menu-link" href="#">Accomodations</a></li>
+            <li class="nav-item"><a class="menu-link" href="#">Activities</a></li>
+            <li class="nav-item-1"><a class="menu-link" href="#"><strong class="sign-up">Sign up</strong></a></li>
+        </ul>
+
+        <!--mobile nav-->
+
+        <nav class="mobile-nav">
+            <a href="#">Accomodations</a>
+            <a href="#">Activities</a>
+            <span class="nav-item-1"><a href="#"><strong class="sign-up">Sign up</strong></a></span>
+        <hr/>
+        </nav>
+    </header>
+
+    <img id="main-logo" src="images/logo/Reservia-logo.png" alt="Reservia logo" title="Reservia" />
 
     <h2 id="top-heading">Find a place for your dream vacation</h2>
     <p id="top-subheading">Downtown or in nature</p>
-
-<body>        
+       
     <form id="search-bar">
         <span id="fa-icon-1"><i class="fas fa-map-marker-alt fa-customize-location"></i></span>
         <input type="text" placeholder="Marseille, France">
@@ -35,19 +45,19 @@
         <h4 class="filters-header">Filters</h4>
         <span class="filters-wrapper">
           <i class="fas fa-money-bill-wave filters-icon"></i>
-          <div class="filters-text">Low cost</div>
+          <span class="filters-text">Low cost</span>
         </span>
         <span class="filters-wrapper">
             <i class="fas fa-child filters-icon"></i>
-            <div class="filters-text">Family-friendly</div>
+            <span class="filters-text">Family-friendly</span>
         </span>
         <span class="filters-wrapper" id="filters-romantic">
           <i class="fas fa-heart filters-icon"></i>
-          <div class="filters-text">Romantic</div>
+          <span class="filters-text">Romantic</span>
         </span>
         <span class="filters-wrapper">
           <i class="fas fa-dog filters-icon"></i>
-          <div class="filters-text">Pets allowed</div>
+          <span class="filters-text">Pets allowed</span>
         </span>
     </div>
 
@@ -150,12 +160,14 @@
             <h3 id="main-subhead">Show more</h3>
         </section>
 
-        <section>
+<!--most popular accomodation listings. Will appear first in mobile, tablet-->
+
+        <div>
             <section class="aside-container">
                 <i class="fas fa-chart-line fa-customize-popular"></i>
                 <h3 id="aside-header">Most Popular</h3>
                 <article id="popular-list-1">
-                    <img id="popular-1" src="images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" ALIGN="left" alt="Sun">
+                    <img id="popular-1" src="images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Sun">
                     <h4 class="popular-header">Morning Sun Hotel</h4>
                     <p class="popular-desc" id="popular-different">Night starting at<strong>128€</strong></p>
                     <div class="ratings-aside">
@@ -167,7 +179,7 @@
                     </div>
                 </article>
                 <article id="popular-list-2">
-                    <img id="popular-2" src="images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg" ALIGN="left" alt="Breakfast">                   
+                    <img id="popular-2" src="images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Breakfast">                   
                     <h4 class="popular-header">Au cœur de l'eau Bed <br> and Breakfast</h4>
                     <p class="popular-desc">Night starting at<strong>71€</strong></p>
                     <div class="ratings-aside" id="ratings-popular-two">
@@ -179,7 +191,7 @@
                     </div>
                 </article>
                 <article id="popular-list-3">
-                    <img id="popular-3" src="images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg" ALIGN="left" alt="Blanc">
+                    <img id="popular-3" src="images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Blanc">
                     <h4 class="popular-header">Tout Bleu et Blanc <br> Hotel</h4>
                     <p class="popular-desc">Night starting at <strong>68€</strong></p>
                     <div class="ratings-aside" id="ratings-popular-three">
@@ -191,10 +203,9 @@
                     </div>
                 </article>
             </section>
-        </section>
+        </div>
 
-<!--1. create a container for these elements; 2. make a header; 3. create a class within both 1 and 2 of the listings-->
-<!--4. Make another class within the 3 sections for the tall cards; 5. Inside, add class for img + src, and contents -->
+<!--container with activities to do in the city-->
 
         <section class="activities-container">
             <h3 id="activities-header">Activities in Marseille</h3>
@@ -204,7 +215,7 @@
                     <img class="activities-tall-image" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Old Port" />
                     <div class="activities-tall-content"><h4>Old Port</h4></div>
                 </article>
-                <section class="activities-short-container">
+                <div class="activities-short-container">
                     <article class="activities-short-card-1">
                         <a href="#"></a>
                         <img class="activities-short-image-1" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Pomegues Fort" />
@@ -215,13 +226,13 @@
                         <img class="activities-short-image-2" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Frioul Island" />
                         <div class="activities-short-content"><h4>Frioul Island</h4></div>
                     </article>
-                </section>
+                </div>
                     <article class="activities-tall-card">
                         <a href="#"></a>
                         <img class="activities-tall-image" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanques National Park" />
                         <div class="activities-tall-content"><h4>Calanques National Park</h4></div>
                     </article>
-                <section class="activities-short-container">
+                <div class="activities-short-container">
                     <article class="activities-short-card-1">
                         <a href="#"></a>
                         <img class="activities-short-image-1" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre Dame-de-la-Garde" />
@@ -232,7 +243,7 @@
                         <img class="activities-short-image-2" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Longchamp Park" />
                         <div class="activities-short-content"><h4>Longchamp Park</h4></div>
                     </article>
-                </section>
+                </div>
             </div>
         </section>
     </main>
@@ -259,12 +270,6 @@
             </div>
         </footer>
     </section>
-    
-    <div class="airplane"><i class="fas fa-map-marked-alt fa-map"></i><span>Reservia, LLC © 2021</span></div>
-
-    <figure>
-        <img class="logo-bottom" src="images/logo/Reservia.svg" alt="bottom-logo">
-    </figure>
 
 </body>
 </html>

@@ -22,6 +22,10 @@ h4 {
     margin: 5px;
 }
 
+.mobile-nav {
+    display: none;
+}
+
 #main-logo {
     width: 100px;
     position: absolute;
@@ -29,7 +33,7 @@ h4 {
 	left: 12px;
 }
 
-.nav-item {
+.nav-item, .nav-item-1 {
     display: inline-block;
     margin: 0px 20px;
     font-size: 14px;
@@ -302,9 +306,8 @@ main {
 .popular-header {
     display: flex;
     flex-direction: row;
-    margin: 0px;
-    padding-top: 1rem;
-    padding-left: 1rem;
+    margin: -130px 20px 34px 20px;
+    padding-left: 130px;
     font-size: 1em;
     font-weight: 800;
 }
@@ -320,19 +323,25 @@ strong {
 .popular-desc {
     display: flex;
     flex-direction: row;
-    margin-top: 8px;
-    padding-left: 1rem;
+    margin: -25px 1px;
+    padding-left: 150px;
     font-size: .85em;
 }
 
 .ratings-aside {
     display: inline-block;
-    margin-left: 15px;
+    margin-left: 155px;
+    margin-top: 45px;
 }
 
-#ratings-popular-two, #ratings-popular-three {
-    margin-left: 15px;
-    margin-top: 20px;
+#ratings-popular-two {
+    margin-left: 155px;
+    margin-top: 45px;
+}
+
+#ratings-popular-three {
+    margin-left: 155px;
+    margin-top: 65px;
 }
 
 .fa-customize-rating-aside {
@@ -548,24 +557,63 @@ footer {
     }
 
       #main-logo {
-        margin-left: -16px;
-        margin-top: -2px;
-        width: 175px;
+        margin-left: -1%;
+        margin-top: -4%;
+        width: 35%;
     }
 
-      header {
-        padding-top: 6px;
-        font-size: 1rem;
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-around;
-        width: 50%;
-        max-width: 200px;
-        margin-left: 55%;
+    .main-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+	    display: flex;
+	    position: relative;
+	    background: white;
+    }
+
+    .nav-item-1 {
+        display: inline-block;
+        margin-left: -25%;
+        font-size: 14.8px;
+    }
+
+    .mobile-nav a {
+		display: inline-block;
+        margin-top: 20%;
+        color: #0065FC;
+		width: 100%;
+        font-size: 1.25em;
+		padding: 15px;
+		text-align: center;
+		text-transform: capitalize;
+        text-decoration: none;
+    }
+    .mobile-nav hr {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		margin: 0;
+		border: 0;
+		height: 4px;
+        width: 100%;
+        background-color: #0065FC;
+    }
+
+    .mobile-nav a:hover, .mobile-nav hr:hover {
+        color: gray;
     }
     
     #br-desktop {
         display: none;
+    }
+
+    #top-heading {
+        margin-top: 10%;
+    }
+
+    #top-subheading {
+        margin-top: 3%;
     }
 
     #search-bar {
@@ -574,8 +622,8 @@ footer {
         border: solid white 1px;
 	    border-radius: 1rem;
         margin-left: 10px;
+        margin-top: 5%;
 	    width: 95%;
-        padding-right: -10px;
 	    max-width: 400px;
         height: 100%
     }
@@ -728,9 +776,14 @@ footer {
         font-size: 16px;
     }
 
+    #ratings-popular-two {
+        margin-left: 155px;
+        margin-top: 65px;
+    }
+    
     #ratings-popular-three {
-        margin-left: 15px;
-        margin-top: 20px;
+        margin-left: 155px;
+        margin-top: 65px;
     }
 
     /* activities information */
@@ -764,7 +817,7 @@ footer {
         width: 388px;
         min-width: 375px;
         height: 200px;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         margin-left: -10px;
     }
 
@@ -804,7 +857,14 @@ footer {
 
 @media only screen and (max-width: 410px) {
 
-   .activities-container {
+    html, body {
+        overflow-x: hidden;
+    }
+      body {
+        position: relative;
+    }
+   
+    .activities-container {
        width: 375px;
    }
    
@@ -822,5 +882,142 @@ footer {
 
     .activities-tall-content, .activities-short-content {
         align-content: center;
+    }
+}
+
+@media only screen and (min-width: 540px) and (max-width: 768px) {
+    
+    html, body {
+        overflow-x: hidden;
+    }
+    body {
+        position: relative;
+    }
+
+    #main-logo {
+        margin-left: -1%;
+        width: 20%;
+    }
+
+    .main-nav {
+        margin-top: 25px;
+    }
+
+    #top-heading {
+        margin-top: 5%;
+    }
+
+    #top-subheading {
+        margin-top: 1%;
+    }
+        
+    .large-container {
+        order: 2;
+        margin-top: 650px;
+        width: max-content;
+    }
+    
+    .aside-container {
+        order: 1;
+        width: 650px;
+        margin-left: 6%;
+        margin-top: 50px;
+        border-radius: 15px;
+    }
+
+    .popular-header {
+        display: flex;
+        flex-direction: row;
+        margin: -130px 40px 78px 150px;
+        padding-left: 130px;
+        font-size: 1.25em;
+        font-weight: 800;
+    }
+    
+    .popular-desc {
+        margin-top: -60px;
+        margin-left: 130px;
+        margin-right: 10px;
+        font-size: 1.15em;
+    }
+    
+    #popular-list-1, #popular-list-2, #popular-list-3 {
+        margin: 1px;
+        margin-top: 20px;
+        width: 600px;
+        height: 150px;
+        margin-left: 25px;
+    }
+
+    .fa-customize-rating-aside, .fa-customize-rating-aside-gray {
+        font-size: 16px;
+    }
+    
+    #popular-1, #popular-2, #popular-3 {
+        width: 250px;
+        height: 94%;
+        border-radius: 1rem 0 0 1rem;
+        object-fit: cover;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+
+    .fa-customize-popular {
+        margin-right: 28px;
+    }    
+
+    .ratings-aside {
+        margin-left: 280px;
+        margin-top: 35px;
+    }
+
+    #ratings-popular-two {
+        margin-left: 282px;
+        margin-top: 40px;
+    }
+
+    #ratings-popular-three {
+        margin-left: 282px;
+        margin-top: 65px;
+    }
+
+    br {
+        display: none;
+    }
+        
+    .activities-container {
+        width: 778px;
+        margin-top: 30px;
+        order: 3;
+    }
+        
+    .activities-listing {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+     
+    .activities-short-card-1, .activities-short-card-2 {
+        width: 300px;
+        margin-left: -180px;
+    }
+    
+    .activities-short-card-2 {
+        margin-bottom: 25px;
+    }
+    
+    .activities-tall-card {
+        width: 300px;
+        height: 350px;
+        margin-left: 50px;    
+    }
+
+    footer {
+        width: 768px;
+        display: inline-block;
+    }
+
+    #footer-left, #footer-center, #footer-right {
+        width: 25%;
     }
 }
