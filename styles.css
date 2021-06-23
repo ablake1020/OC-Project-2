@@ -550,7 +550,7 @@ footer {
 @media only screen and (max-width: 414px) {
     
     body {
-        overflow: hidden!important;
+        overflow-x: hidden !important;
     }
 
       #main-logo {
