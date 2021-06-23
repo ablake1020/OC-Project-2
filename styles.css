@@ -549,12 +549,9 @@ footer {
 
 @media only screen and (max-width: 414px) {
     
-    html, body {
+    body {
         overflow-x: hidden;
         overflow-y: scroll;
-    }
-      body {
-        position: relative;
     }
 
       #main-logo {
