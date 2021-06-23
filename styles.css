@@ -233,6 +233,8 @@ main {
     box-shadow: black 0px 0px 0px 0px;
 }
 
+/* images */
+
 #lodging-1, #lodging-2, #lodging-3, #lodging-4, #lodging-5, #lodging-6 {
     display: flex;
     flex-wrap: wrap;
@@ -357,6 +359,8 @@ strong {
     font-size: 12px;
     margin: -2px;
 }
+
+/* images */
 
 #popular-list-1 {
     background-color: white;
