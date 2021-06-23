@@ -549,8 +549,9 @@ footer {
 
 @media only screen and (max-width: 414px) {
     
-    body {
-        overflow-x: hidden !important;
+      body {
+        overflow-x: hidden;
+        position: relative;
     }
 
       #main-logo {
@@ -749,7 +750,7 @@ footer {
     }
     
     .aside-container {
-        width: 100%;
+        width: 97.5%;
         height: 550px;
         padding: 8px;
         border-radius: 0px;
