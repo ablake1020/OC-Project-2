@@ -1,3 +1,5 @@
+/* desktop design */
+
 body {
     margin: 12px;
     font-family: "Raleway", sans-serif;
@@ -524,12 +526,6 @@ footer {
     cursor: pointer;
 }
 
-.airplane {
-    text-align: center;
-    vertical-align: middle;
-    background-color: #e6e6e6;
-}
-
 .fa-map {
     display: flex;
     color: #0065FC;
@@ -833,18 +829,14 @@ footer {
 
     footer {
         margin-top: 25px;
-        width: 375px;
+        width: 94.5%
     }
 
     #footer-left, #footer-center, #footer-right {
         display: block;
-        width: 375px;
+        width: 97.5%;
         padding: 1px;
-        margin: -2px;
-    }
-
-    .airplane, .fa-plane {
-       display: none;
+        margin-left: -2px;
     }
 
     .logo-bottom {
@@ -856,11 +848,14 @@ footer {
 
 @media only screen and (max-width: 410px) {
 
-    html, body {
+    body, html {
         overflow-x: hidden;
-    }
-      body {
         position: relative;
+    }
+
+    #ratings-popular-two {
+        margin-left: 155px;
+        margin-top: 47px;
     }
    
     .activities-container {
@@ -886,10 +881,8 @@ footer {
 
 @media only screen and (min-width: 540px) and (max-width: 768px) {
     
-    html, body {
-        overflow-x: hidden;
-    }
     body {
+        overflow-x: hidden;
         position: relative;
     }
 
@@ -919,7 +912,7 @@ footer {
     .aside-container {
         order: 1;
         width: 650px;
-        margin-left: 6%;
+        margin-left: 6.5%;
         margin-top: 50px;
         border-radius: 15px;
     }
