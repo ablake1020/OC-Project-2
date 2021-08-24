@@ -238,7 +238,7 @@ main {
 #lodging-1, #lodging-2, #lodging-3, #lodging-4, #lodging-5, #lodging-6 {
     display: flex;
     flex-wrap: wrap;
-    width: 96%;
+    width: 14.5rem;
     height: 120px;
     border-radius: 1rem 1rem 0 0;
     object-fit: cover;
